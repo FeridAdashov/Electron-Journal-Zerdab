@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavText"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    tools:context=".Profiles.Teacher.Lesson.TeacherNoteLessonDataActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/imageButtonArrowBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_white"/>
+
+        <ImageButton
+            android:id="@+id/buttonSaveLesson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/shapeemail"
+            android:src="@drawable/ic_check_white"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listViewStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="10.0sp"
+        android:layout_weight="1"
+        tools:listitem="@layout/list_card_item"/>
+</LinearLayout>

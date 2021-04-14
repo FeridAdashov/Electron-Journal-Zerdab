@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AuthActivities.RegisterActivities.StudentRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewStudentProfileInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/registration"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextStudentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:digits="abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSİTUVWXYZÜIĞÖŞÇƏ "
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/name_surname"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/editTextStudentBiography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/phone_number_and_extra"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/editTextStudentMoneyPerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/money_per_month"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/editTextStudentDebt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/debt"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/editTextStudentPayed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/paid"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <TextView
+                android:id="@+id/textViewRegisterDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/registration_date"
+                android:textColor="@color/primary_light"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <Spinner
+                android:id="@+id/spinnerClassNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:popupBackground="@drawable/shapesignup"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/buttonRegisterStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapelogin"
+                android:padding="15dp"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/button_sign_up"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

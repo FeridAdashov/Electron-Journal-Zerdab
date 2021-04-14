@@ -1,0 +1,118 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    card_view:cardCornerRadius="10dp"
+    android:id="@+id/cardViewStudentPayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cardTextViewPaymentTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:text="Payment Time"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/amount"
+                android:textColor="@color/edit_text_back"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cardTextViewPaymentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/download_icon_green_background"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/payed"
+                android:textColor="@color/edit_text_back"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cardTextViewPaymentPayed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/download_icon_green_background"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/debt"
+                android:textColor="@color/edit_text_back"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cardTextViewPaymentDebt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@color/accent"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

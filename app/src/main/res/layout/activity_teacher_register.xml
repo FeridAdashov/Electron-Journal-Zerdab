@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".AuthActivities.RegisterActivities.TeacherRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:text="@string/registration"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextTeacherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shapeemail"
+                android:digits="abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSTİUVWXYZÜIĞÖŞÇƏ "
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/name_surname"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/editTextTeacherClassCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="Sinif sayı"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/editTextTeacherBiography"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/hint_teacher_biography"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <Button
+                android:id="@+id/buttonRegisterTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shapelogin"
+                android:padding="15dp"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/button_sign_up"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AuthActivities.RegisterActivities.ManagerRegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewManagerProfileInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/registration"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextManagerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shapeemail"
+        android:digits="abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQİRSTUVWXYZÜIĞÖŞÇƏ "
+        android:drawableStart="@drawable/ic_edit_white"
+        android:drawableLeft="@drawable/ic_edit_white"
+        android:drawablePadding="10dp"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/buttonRegisterManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shapelogin"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="@string/button_sign_up"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

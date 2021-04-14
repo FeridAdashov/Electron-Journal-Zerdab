@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_more_vert_black_24dp">
+
+        <menu>
+            <item
+                android:id="@+id/order"
+                android:title="@string/order_type"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:id="@+id/orderTypeDate"
+                        android:title="@string/date"
+                        app:showAsAction="ifRoom" />
+                    <item
+                        android:id="@+id/orderTypeLesson"
+                        android:title="@string/lesson"
+                        app:showAsAction="ifRoom" />
+                </menu>
+            </item>
+
+            <item
+                android:id="@+id/grid"
+                android:title="@string/grid"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/messages"
+                android:title="@string/messages"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/payment_history"
+                android:title="@string/payment_history"
+                app:showAsAction="never"/>
+
+            <item android:title="@string/languages"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:id="@+id/language_az"
+                        android:title="@string/azerbaijan"
+                        app:showAsAction="ifRoom" />
+
+                    <item
+                        android:id="@+id/language_en"
+                        android:title="@string/english"
+                        app:showAsAction="ifRoom" />
+
+                    <item
+                        android:id="@+id/language_ru"
+                        android:title="@string/russian"
+                        app:showAsAction="ifRoom" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>

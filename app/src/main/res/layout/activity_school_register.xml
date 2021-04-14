@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context=".AuthActivities.RegisterActivities.SchoolRegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:text="@string/registration"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/editTextSchoolName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/hint_school_name"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/editTextMoneyPerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/shapeemail"
+                android:drawableStart="@drawable/ic_edit_white"
+                android:drawableLeft="@drawable/ic_edit_white"
+                android:drawablePadding="10dp"
+                android:hint="@string/money_per_month"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/edit_text_hint" />
+
+            <Spinner
+                android:id="@+id/spinnerLessons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/shapeemail"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:popupBackground="@drawable/shapesignup"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLessonNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextLessonName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapeemail"
+                    android:drawableStart="@drawable/ic_edit_white"
+                    android:drawableLeft="@drawable/ic_edit_white"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/hint_lesson_name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_text_hint" />
+
+                <ImageButton
+                    android:id="@+id/buttonAddLessonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_add_white"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
+                    android:text="@string/button_add_lesson"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerClasses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/shapeemail"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:popupBackground="@drawable/shapesignup"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextClassName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapeemail"
+                    android:drawableStart="@drawable/ic_edit_white"
+                    android:drawableLeft="@drawable/ic_edit_white"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/hint_class_name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_text_hint" />
+
+                <ImageButton
+                    android:id="@+id/buttonAddClassName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_add_white"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
+                    android:text="@string/button_add_class"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <LinearLayout
+        android:id="@+id/l_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonRegisterSchool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapelogin"
+            android:padding="15dp"
+            android:shadowColor="@android:color/transparent"
+            android:text="@string/button_sign_up"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+</LinearLayout>

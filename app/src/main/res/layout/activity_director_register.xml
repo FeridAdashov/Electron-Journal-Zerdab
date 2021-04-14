@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBottomNavBar"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AuthActivities.RegisterActivities.DirectorRegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewDirectorProfileInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:text="@string/registration"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextDirectorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shapeemail"
+        android:digits="abcdefghijklmnopqrstuvwxyzüığöşçəABCDEFGHIJKLMNOPQRSTUVWXYZÜIĞÖŞÇƏ "
+        android:drawableStart="@drawable/ic_edit_white"
+        android:drawableLeft="@drawable/ic_edit_white"
+        android:drawablePadding="10dp"
+        android:hint="@string/name_surname"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/buttonRegisterDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapelogin"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="@string/button_sign_up"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

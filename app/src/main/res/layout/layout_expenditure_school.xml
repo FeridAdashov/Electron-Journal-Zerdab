@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_search_white_24dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/white" />
+
+        <ListView
+            android:id="@+id/listViewTeachers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:listSelector="#79AFC2">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/other_expenditure_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shapelogin"
+            android:text="@string/other" />
+    </LinearLayout>
+</LinearLayout>

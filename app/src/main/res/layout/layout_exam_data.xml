@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextCommonCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ümumi sual sayı"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edit_text_hint" />
+
+        <EditText
+            android:id="@+id/editTextCountOfCorrects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doğru sual sayı"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edit_text_hint" />
+
+        <EditText
+            android:id="@+id/editTextCountOfWrongs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Yanlış sual sayı"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edit_text_hint" />
+
+        <EditText
+            android:id="@+id/editTextExtraInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/can_be_entered_extra_information"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:textColorHint="@color/edit_text_hint" />
+    </LinearLayout>
+</ScrollView>

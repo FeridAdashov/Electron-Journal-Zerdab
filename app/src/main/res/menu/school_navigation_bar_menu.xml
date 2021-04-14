@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_payments"
+        android:icon="@drawable/ic_profit_white"
+        android:title="@string/payments" />
+
+    <item
+        android:id="@+id/navigation_expenditure"
+        android:icon="@drawable/ic_expense_white"
+        android:title="@string/expenditure"/>
+
+    <item
+        android:id="@+id/navigation_profiles"
+        android:icon="@drawable/ic_person_white"
+        android:title="@string/profiles" />
+</menu>

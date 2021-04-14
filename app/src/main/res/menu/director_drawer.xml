@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_teacher_valuation"
+            android:title="Müəllim Qiymətləndirmə"
+            android:icon="@drawable/ic_teacher"/>
+
+        <item
+            android:id="@+id/nav_exam"
+            android:title="Quiz"
+            android:icon="@drawable/ic_exam_white"/>
+
+        <item
+            android:id="@+id/nav_budget"
+            android:checkable="false"
+            android:title="@string/budget"
+            android:icon="@drawable/ic_balance_white"/>
+
+        <item
+            android:id="@+id/nav_other_payments"
+            android:title="@string/other_payments"
+            android:icon="@drawable/ic_profit_white"/>
+
+        <item
+            android:id="@+id/nav_deleted_users"
+            android:title="@string/deleted_persons"
+            android:icon="@drawable/ic_deleted_user_white"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/button_log_out"
+            android:icon="@drawable/ic_log_out_white"/>
+    </group>
+
+</menu>

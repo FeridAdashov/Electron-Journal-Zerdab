@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_lessons"
+        android:icon="@drawable/ic_list_white"
+        android:title="Qiymətlər" />
+
+    <item
+        android:id="@+id/navigation_exam_result"
+        android:icon="@drawable/ic_exam_white"
+        android:title="Nəticələr" />
+
+    <item
+        android:id="@+id/navigation_messages"
+        android:icon="@drawable/ic_chat_white"
+        android:title="@string/messages" />
+
+    <item
+        android:id="@+id/navigation_payment_history"
+        android:icon="@drawable/ic_money_white"
+        android:title="@string/payments" />
+</menu>

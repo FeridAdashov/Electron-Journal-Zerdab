@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AuthActivities.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/textViewUserLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/title_user_registration"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupUsers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapeemail"
+                    android:text="@string/radioButton_student"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioTeacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapeemail"
+                    android:text="@string/radioButton_teacher"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioSchool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapeemail"
+                    android:text="@string/radioButton_school"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/radioDirector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapeemail"
+                    android:text="@string/radioButton_director"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <RadioButton
+                    android:id="@+id/radioManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shapeemail"
+                    android:text="@string/radioButton_manager"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shapeemail"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+                android:drawableLeft="@drawable/ic_person_white_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/hint_enter_email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white" />
+
+            <com.google.android.material.textfield.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/layoutTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_eye_white_24dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shapeemail"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/hint_enter_password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_eye_white_24dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTextPasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shapeemail"
+                    android:drawableStart="@drawable/ic_lock_black_24dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonNextToInformationPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/shapelogin"
+                android:padding="15dp"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/button_next"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
