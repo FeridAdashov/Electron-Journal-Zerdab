@@ -22,15 +22,15 @@ public class DatabaseFunctions {
     public static int database_count = 1;
 
     private static final ArrayList<String> databaseIds = new ArrayList<>(Arrays.asList(
-            "1:106 your id"   //Database 1
+            "1:303287492773:android:2659c41208f2f5d3bfad4c"   //Database 1
     ));
 
     private static final ArrayList<String> databaseApiKeys = new ArrayList<>(Arrays.asList(
-            "AIza your key"         //Database 1
+            "AIzaSyBrB49FEwhRPKQzVQnPv5YiNUBQiyJlGRE"         //Database 1
     ));
 
     private static final ArrayList<String> databaseURLs = new ArrayList<>(Arrays.asList(
-            "your database url"        //Database 1
+            "https://zerdab-database-1-6a89c.firebaseio.com"        //Database 1
     ));
 
 

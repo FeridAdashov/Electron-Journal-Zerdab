@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "303287492773",
+    "firebase_url": "https://zerdab-database-1-6a89c.firebaseio.com",
+    "project_id": "zerdab-database-1-6a89c",
+    "storage_bucket": "zerdab-database-1-6a89c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303287492773:android:2659c41208f2f5d3bfad4c",
+        "android_client_info": {
+          "package_name": "com.ej.zerdabiyolu2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303287492773-udt2molotir4u45908if6l1hk8q56smt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrB49FEwhRPKQzVQnPv5YiNUBQiyJlGRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303287492773-udt2molotir4u45908if6l1hk8q56smt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

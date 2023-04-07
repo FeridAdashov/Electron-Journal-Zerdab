@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
                 progressDialog.dismiss();
 
                 Integer version = dataSnapshot.child("DatabaseInformation/version").getValue(Integer.class);
-                if (version == null || version != 5) {
+                if (version == null || version != 6) {
                     firebaseAuth.signOut();
                     Toast.makeText(getBaseContext(), "Proqramı Güncəlləyin!", Toast.LENGTH_LONG).show();
                     return;
