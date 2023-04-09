@@ -38,9 +38,6 @@ jobs:
   instrumentation-test:
     needs: [unit-test]
     runs-on: macos-11.0
-    defaults:
-      run:
-        working-directory: ./build
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
@@ -52,10 +49,11 @@ jobs:
           script: ./gradlew connectedCheck
 
       - name: Upload test report
+        working-directory: app/build/reports/androidTests/connected
         uses: actions/upload-artifact@v2
         with:
           name: instrumentation_test_report
-          path: app/build/reports/
+          path: instrumentation_test_report.html
 
   Compile:
     runs-on: ubuntu-latest
