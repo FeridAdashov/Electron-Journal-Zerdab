@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run espresso tests
-        uses: macos-11.0@v2
+        uses: macos-11.0
         with:
           api-level: 29
           script: ./gradlew connectedCheck
