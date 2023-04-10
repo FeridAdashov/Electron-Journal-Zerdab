@@ -42,6 +42,10 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
+      - name: Create Artifact Folder
+        run: New-Item -Path '${{ github.workspace }}' -Name "Artifacts" -ItemType "directory"
+        shell: powershell
+
       - name: Run espresso tests
         uses: futureware-tech/simulator-action@v2
         with:
@@ -54,7 +58,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: instrumentation_test_report
-          path: ${{ github.workspace }}/app/build/reports/androidTests/connected/
+          path: ${{ github.workspace }}/Artifacts
 
   Compile:
     runs-on: ubuntu-latest
