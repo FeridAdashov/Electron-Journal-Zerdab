@@ -42,23 +42,19 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
 
-      - name: Create Artifact Folder
-        run: New-Item -Path '${{ github.workspace }}' -Name "Artifacts" -ItemType "directory"
-        shell: powershell
-
       - name: Run espresso tests
         uses: futureware-tech/simulator-action@v2
         with:
           api-level: 29
           script: ./gradlew connectedCheck
 
-#      - run: mkdir -p app/build/reports/androidTests/connected
+      - run: mkdir -p app/build/reports/androidTests/connected
 
       - name: Upload test report
         uses: actions/upload-artifact@v2
         with:
           name: instrumentation_test_report
-          path: ${{ github.workspace }}/Artifacts
+          path: app/build/reports/androidTests/connected/index.html
 
   Compile:
     runs-on: ubuntu-latest
