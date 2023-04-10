@@ -46,9 +46,9 @@ jobs:
         uses: futureware-tech/simulator-action@v2
         with:
           api-level: 29
-          script: ./gradlew connectedCheck
+          script: ./gradlew connectedCheck -PcodeCoverage=true
 
-      - run: mkdir -p app/build/reports/androidTests/connected
+#      - run: mkdir -p app/build/reports/androidTests/connected
 
       - name: Upload test report
         uses: actions/upload-artifact@v2
