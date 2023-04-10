@@ -38,9 +38,6 @@ jobs:
   instrumentation-test:
     needs: [unit-test]
     runs-on: macos-11.0
-    defaults:
-      run:
-        working-directory: ./app/build/reports/androidTests/connected
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
@@ -57,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: instrumentation_test_report
-          path: app/build/reports/androidTests/connected/
+          path: ${{ github.workspace }}/app/build/reports/androidTests/connected/
 
   Compile:
     runs-on: ubuntu-latest
