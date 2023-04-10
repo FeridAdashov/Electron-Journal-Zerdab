@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: instrumentation_test_report
-          path: app/build/reports/androidTests/connected/index.html
+          path: app/build/reports/androidTests/connected
 
   Compile:
     runs-on: ubuntu-latest
