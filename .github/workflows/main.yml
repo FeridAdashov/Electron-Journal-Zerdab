@@ -51,7 +51,7 @@ jobs:
           api-level: 29
           script: ./gradlew connectedCheck
 
-      - run: mkdir -p app/build/reports/androidTests/connected
+#      - run: mkdir -p app/build/reports/androidTests/connected
 
       - name: Upload test report
         uses: actions/upload-artifact@v2
