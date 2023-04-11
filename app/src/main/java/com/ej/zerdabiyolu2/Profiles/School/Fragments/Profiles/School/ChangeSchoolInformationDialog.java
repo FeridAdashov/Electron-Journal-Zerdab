@@ -26,12 +26,18 @@ import java.util.ArrayList;
 public class ChangeSchoolInformationDialog extends AppCompatDialogFragment implements View.OnClickListener {
 
     boolean b = false;
-    private EditText editTextClassName, editTextLessonName, editTextMoneyPerMonth;
-    private Spinner spinnerClasses, spinnerLessons;
-    private ImageButton buttonAddLessonName, buttonAddClassName;
-    private ArrayList<String> classes, lessons;
+    private EditText editTextClassName;
+    private EditText editTextLessonName;
+    private EditText editTextMoneyPerMonth;
+    private Spinner spinnerClasses;
+    private Spinner spinnerLessons;
+    private ImageButton buttonAddLessonName;
+    private ImageButton buttonAddClassName;
+    private ArrayList<String> classes;
+    private ArrayList<String> lessons;
     private Double moneyPerMonth;
-    private ArrayAdapter<String> adapterClasses, adapterLessons;
+    private ArrayAdapter<String> adapterClasses;
+    private ArrayAdapter<String> adapterLessons;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
