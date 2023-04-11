@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: "io.gitlab.arturbosch.detekt"               // detekt STEP1 applying plugin (detekt = kotlin code's static analyser)
 apply plugin: "checkstyle"
 apply plugin: "com.vanniktech.android.junit.jacoco"
+apply plugin: "org.sonarqube"
 
 
 // detekt STEP2 plugin configuration
