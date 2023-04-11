@@ -39,7 +39,7 @@
                     android:background="@drawable/shapeemail"
                     android:popupBackground="@drawable/shapesignup"
                     android:spinnerMode="dropdown"
-                    android:textAlignment="center" />
+                    android:gravity="center_horizontal" />
             </LinearLayout>
 
             <LinearLayout
@@ -67,7 +67,7 @@
                     android:background="@drawable/shapeemail"
                     android:popupBackground="@drawable/shapesignup"
                     android:spinnerMode="dropdown"
-                    android:textAlignment="center" />
+                    android:gravity="center_horizontal" />
 
             </LinearLayout>
 
