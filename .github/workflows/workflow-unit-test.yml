@@ -1,4 +1,4 @@
-name: CI
+name: Unit-Testing-Workflow
 on:
   push:
     branches: [ unit-testing ]
