@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ main ]
+    branches: [ unit-testing ]
   pull_request:
-    branches: [ main ]
+    branches: [ unit-testing ]
   workflow_dispatch:
 
 jobs:
